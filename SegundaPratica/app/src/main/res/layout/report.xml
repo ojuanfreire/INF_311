@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IMCData">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report"
+        android:id="@+id/reportText"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:typeface="serif"
+        android:textStyle="italic"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/reportText"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="-80dp"
+        android:textSize="15sp"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/reportText"
+        android:layout_marginTop="40dp"
+        android:textSize="15sp"
+        android:id="@+id/setName"
+        android:text=""
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/setName"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="-80dp"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/setName"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:id="@+id/setAge"
+        android:text=""
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/setAge"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="-80dp"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/setAge"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:id="@+id/setWeight"
+        android:text=""
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/setWeight"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="-80dp"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/setWeight"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:id="@+id/setHeight"
+        android:text=""
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/imc"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/setHeight"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="-80dp"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/setHeight"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:id="@+id/setIMC"
+        android:text=""
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/classification"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/setIMC"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="-80dp"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reportText"
+        android:layout_below="@+id/setIMC"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="15sp"
+        android:id="@+id/setClassification"
+        android:text=""
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setClassification"
+        android:layout_alignLeft="@+id/setClassification"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="-56dp"
+        android:text="@string/newCalc"
+        android:id="@+id/back"
+        android:onClick="back"
+        />
+</RelativeLayout>
